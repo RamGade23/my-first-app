@@ -1,3 +1,16 @@
 import { Routes } from '@angular/router';
+import { HomeComponent } from './home/home.component';
+import { CareerComponent } from './career/career.component';
+import { AboutusComponent } from './aboutus/aboutus.component';
+import { CourseComponent } from './course/course.component';
+import { ContactusComponent } from './contactus/contactus.component';
+import { CounterComponent } from './counter/counter.component';
 
-export const routes: Routes = [];
+export const routes: Routes = [
+    { path: '', pathMatch: 'full', component: HomeComponent },
+    { path: 'career', component: CareerComponent },//http://localhost:4200/career
+    { path: 'about', component: AboutusComponent },
+    { path: 'course', component: CourseComponent },
+    { path: 'contact', component: ContactusComponent },
+    { path: 'counter', component: CounterComponent }
+];

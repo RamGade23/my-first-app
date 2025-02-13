@@ -16,6 +16,7 @@ nav {
 
     span {
         cursor: pointer;
+        font-size: 30px;
 
         &:hover {
             color: #777;
@@ -33,4 +34,9 @@ nav {
             }
         }
     }
+}
+
+nav ul {
+    display: flex;
+    gap: 16px;
 }

@@ -1,4 +1,4 @@
-import { Component, signal } from '@angular/core';
+import { Component, Input, input, signal } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -12,8 +12,8 @@ export class HomeComponent {
 
   changeMessage() {
     console.log("changeMessage called");
-    //this.signalMessage.update(() => 'You clicked the button');
-    this.headline = 'You clicked the button';
+    this.signalMessage.update(() => 'You clicked the button');
+    //this.headline = 'You clicked the button';
   }
-
+  @Input() message: string = 'Hello from child HomeComponent';
 }
