@@ -5,6 +5,7 @@ import { AboutusComponent } from './aboutus/aboutus.component';
 import { CourseComponent } from './course/course.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { CounterComponent } from './counter/counter.component';
+import { EmployeeListComponent } from './employee-list/employee-list.component';
 
 export const routes: Routes = [
     { path: '', pathMatch: 'full', component: HomeComponent },
@@ -12,5 +13,6 @@ export const routes: Routes = [
     { path: 'about', component: AboutusComponent },
     { path: 'course', component: CourseComponent },
     { path: 'contact', component: ContactusComponent },
-    { path: 'counter', component: CounterComponent }
+    { path: 'counter', component: CounterComponent },
+    { path: 'employee-list', component: EmployeeListComponent }
 ];
