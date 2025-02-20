@@ -26,4 +26,8 @@ export class EmployeeService {
   updateEmployee(id: number, employee: Employee): Observable<Object> {
     return this.httpClient.put(`${this.BASE_URL}/${id}`, employee); //http://localhost:8090/api/employees/{id}
   }
+
+  deleteEmployee(id: number | null): Observable<Object> {
+    return this.httpClient.delete(`${this.BASE_URL}/${id}`);
+  }
 }
