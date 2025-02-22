@@ -20,5 +20,6 @@ export const routes: Routes = [
     { path: 'employee-list', component: EmployeeListComponent },
     { path: 'create-employee', component: CreateEmployeeComponent },
     { path: 'update-employee/:id', component: UpdateEmployeeComponent },
-    { path: 'employee-details/:id', component: EmployeeDetailsComponent }
+    { path: 'employee-details/:id', component: EmployeeDetailsComponent },
+    { path: '**', redirectTo: '' }
 ];
